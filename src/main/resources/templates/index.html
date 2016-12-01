@@ -167,15 +167,15 @@
     <div class="container" id="applist">
         <div class="row" >
             <div class="col-md-7">
-                <a th:href="@{/app/}+${appName}" th:text="${app.displayName == null} ? ${appName} : ${app.displayName}">
+                <a th:href="@{/app/}+${name}" th:text="${displayName == null} ? ${name} : ${displayName}">
                     <img class="img-responsive" src="http://placehold.it/700x300" alt=""/>
                 </a>
             </div>
             <div class="col-md-5">
-                <h3 th:text="${app.displayName == null} ? ${appName} : ${app.displayName}">Project One</h3>
+                <h3 th:text="${displayName == null} ? ${name} : ${displayName}">Project One</h3>
                 <h4>Subheading</h4>
-                <p th:if="${app.description != null}" th:text="${app.description}"></p>
-                <a class="btn btn-primary" th:href="@{/app/}+${appName}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <p th:if="${description != null}" th:text="${description}"></p>
+                <a class="btn btn-primary" th:href="@{/app/}+${name}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>            
         </div>
         <!-- /.row -->
