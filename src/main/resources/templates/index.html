@@ -41,22 +41,22 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a id="a1" href="#top" th:onclick="$( '#menu-close').click();">Start Bootstrap</a>
+                <a id="a1" href="#top" th:onclick="'javascript:menu-close.click();'">Start Bootstrap</a>
             </li>
             <li>
-                <a id="a2" href="#top" th:onclick="$( '#menu-close').click();">Home</a>
+                <a id="a2" href="#top" th:onclick="'javascript:#menu-close.click();'">Home</a>
             </li>
             <li>
-                <a id="a3" href="#about" th:onclick="$( '#menu-close').click();">About</a>
+                <a id="a3" href="#about" th:onclick="$('#menu-close').click();">About</a>
             </li>
             <li>
-                <a id="a4" href="#services" th:onclick="$( '#menu-close').click();">Services</a>
+                <a id="a4" href="#services" th:onclick="$('#menu-close').click();">Services</a>
             </li>
             <li>
-                <a id="a5" href="#portfolio" th:onclick="$( '#menu-close').click();">Portfolio</a>
+                <a id="a5" href="#portfolio" th:onclick="$('#menu-close').click();">Portfolio</a>
             </li>
             <li>
-                <a id="a6" href="#contact" th:onclick="$( '#menu-close').click();">Contact</a>
+                <a id="a6" href="#contact" th:onclick="$('#menu-close').click();">Contact</a>
             </li>
         </ul>
     </nav>
