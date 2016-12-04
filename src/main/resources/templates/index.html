@@ -88,7 +88,7 @@
         <div th:each="app: ${apps}">
             <div class="row" >
                 <div class="col-md-7">
-                    <img th:src="${app.previewurl}" height="300" width="700"/>                    
+                    <img class="img-responsive" th:src="${app.previewurl}" />                    
                 </div>
                 <div class="col-md-5">
                     <h3 th:text="${app.displayName == null} ? ${app.name} : ${app.displayName}"></h3>
