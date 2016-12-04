@@ -10,7 +10,7 @@
     <meta name="author" content="Mike Morris" />
     
 
-    <title th:text="${title}"></title>
+    <title>Cloud Morris</title>
 
     <!-- Bootstrap Core CSS -->
     <!--<link th:href="@{css/bootstrap.min.css}" rel="stylesheet"></link>-->
@@ -20,6 +20,7 @@
 
     <!-- Custom Fonts -->
     <link th:href="@{font-awesome/css/font-awesome.min.css}" rel="stylesheet" />
+    <link th:href="@{font-awesome/css/fontcustom.css}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}" rel="stylesheet" media="screen" />
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.2/jquery.min.js" th:src="@{/webjars/jquery/2.2.2/jquery.min.js}"></script>
@@ -63,8 +64,8 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1 th:text="${title}"></h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
+            <h1>Cloud Morris</h1>
+            <h3>Data Visualization using R/Shiny and AWS</h3>
             <br></br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
@@ -75,7 +76,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <h2></h2>
                     <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
                 </div>
             </div>
@@ -88,7 +89,7 @@
         <div th:each="app: ${apps}">
             <div class="row" >
                 <div class="col-md-7">
-                    <img class="img-responsive" th:src="${app.previewurl}" />                    
+                    <img class="img-responsive" th:src="${app.previewurl}" height= />                    
                 </div>
                 <div class="col-md-5">
                     <h3 th:text="${app.displayName == null} ? ${app.name} : ${app.displayName}"></h3>
@@ -153,7 +154,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <i class="fa fa-leaf fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Thymeleaf</strong>
@@ -173,6 +174,129 @@
     </section>
     <hr/>
     
+    <!-- Service List -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Project Forks and Code References.</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://github.com/openanalytics/shinyproxy">ShinyProxy</a></h4>
+                        <p>Deploy Shiny apps in an enterprise context. Developed by <a href="https://www.openanalytics.eu">Open Analytics NV</a>.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://aws.amazon.com">AWS</a></h4>
+                        <p>All applications hosted on AWS.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://github.com/iheartradio/ShinyBuilder">ShinyBuilder</a></h4>
+                        <p>Point-and-click dashboard platform. Developed by <a href="https://github.com/iheartradio">iHR DataScience</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://sqlite.org">Sqlite</a></h4>
+                        <p>SQL database engine.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://www.kaggle.com/host">Kaggle datasets</a></h4>
+                        <p>Kaggle is a platform for data science competitions.</a></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-linux fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Linux</h4>
+                        <p>All code is developed and tested for deployment on linux based systems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://startbootstrap.com/">Bootstrap</a></h4>
+                        <p>Web templates from Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="http://www.thymeleaf.org/">Thymeleaf</a></h4>
+                        <p>Server-side Java template engine for both web and standalone environments.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-envira fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://projects.spring.io/spring-boot/">Spring Boot</a></h4>
+                        <p>Spring helps development teams everywhere build simple, portable,  fast and flexible JVM-based systems and applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -188,13 +312,13 @@
                     <br></br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://hub.docker.com/u/mikemorris89/"><i class="fa fa-github-alt fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://github.com/MikeMorris89"><i class="fa fa-docker fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="https://www.kaggle.com/mikemorris89"><i class="fa fa-flask fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small" />
