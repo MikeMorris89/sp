@@ -168,12 +168,12 @@
         <div class="row" >
             <div class="col-md-7">
                 <a th:href="@{/app/}+${app.name}" th:text="${app.displayName == null} ? ${app.name} : ${app.displayName}">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="" />
+                    <img class="img-responsive" src="${app.previewurl}" alt="http://placehold.it/700x300" />
                 </a>
             </div>
             <div class="col-md-5">
                 <h3 th:if="${app.description != null}" th:text="${app.description}"></h3>
-                <h4>Subheading</h4>
+                <h4 th:text="${app.subheading}"></h4>
                 <p th:if="${app.description != null}" th:text="${app.description}"></p>
                 <a class="btn btn-primary" th:href="@{/app/}+${app.name}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
