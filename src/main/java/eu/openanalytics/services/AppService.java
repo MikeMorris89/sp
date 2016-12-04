@@ -95,8 +95,8 @@ public class AppService {
 		public String getPreviewurl() {
 			return Previewurl;
 		}
-		public void setPreviewurl(String Previewurl) {
-			this.Previewurl = Previewurl;
+		public void setPreviewurl(String previewUrl) {
+			this.previewUrl = previewUrl;
 		}
 		
 		public String[] getDockerCmd() {
