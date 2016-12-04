@@ -93,7 +93,7 @@ public class AppService {
 		}
 
 		public String getPreviewurl() {
-			return Previewurl;
+			return previewUrl;
 		}
 		public void setPreviewurl(String previewUrl) {
 			this.previewUrl = previewUrl;
