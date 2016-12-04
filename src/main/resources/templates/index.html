@@ -166,9 +166,9 @@
     <div class="container" id="applist">
     <div th:each="app: ${apps}">
         <div class="row" >
-            <div class="col-md-7">
+            <div class="col-md-7">                
                 <a th:href="@{/app/}+${app.name}" th:text="${app.displayName == null} ? ${app.name} : ${app.displayName}">
-                    <img th:attr="src=${app.previewurl}"></img>
+                    <img th:src="@{app.previewurl}"></img>
                     <!--<img class="img-responsive" th:src="${app.previewurl}" alt="http://placehold.it/700x300" />-->
                     <!--<img th:if="${app.logoUrl != null}" th:src="${app.logoUrl}"></img>-->
                 </a>
