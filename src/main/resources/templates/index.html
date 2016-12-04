@@ -166,12 +166,12 @@
     <div class="container" id="applist">
         <div class="row">
             <div class="col-md-7">
-                <a th:href="@{/app/+${app.name}}" th:text="${app.displayName}">
+                <a th:href="@{/app/${app.name}}" th:text=${app.displayName}>
                     <img class="img-responsive" src="http://placehold.it/700x300" alt="" />
                 </a>
             </div>
             <div class="col-md-5">
-                <h3 th:text="${app.displayName == null} ? ${app.name} : ${app.displayName}">Project One</h3>
+                <h3 th:text="*{app.displayName != null}? *{app.displayName} : *{app.name}"></h3>
                 <h4>Subheading</h4>
                 <p th:if="${app.description != null}" th:text="${app.description}"></p>
                 <a class="btn btn-primary" th:href="@{/app/}+${app.name}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
