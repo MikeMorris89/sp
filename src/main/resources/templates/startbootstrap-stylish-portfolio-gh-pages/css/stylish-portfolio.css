@@ -232,6 +232,23 @@ hr.small {
     }
 }
 
+/*@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+*/
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
 .map iframe {
     pointer-events: none;
 }
