@@ -50,6 +50,8 @@ public class AppService {
 		private String displayName;
 		private String description;
 		private String logoUrl;
+		private String previewUrl;
+		private String subheading;
 		private String[] dockerCmd;
 		private String dockerImage;
 		private String[] dockerDns;
@@ -81,6 +83,20 @@ public class AppService {
 		}
 		public void setLogoUrl(String logoUrl) {
 			this.logoUrl = logoUrl;
+		}
+
+		public String getSubheading() {
+			return subheading;
+		}
+		public void setSubheading(String subheading) {
+			this.subheading = subheading;
+		}
+
+		public String getPreviewurl() {
+			return Previewurl;
+		}
+		public void setPreviewurl(String Previewurl) {
+			this.Previewurl = Previewurl;
 		}
 		
 		public String[] getDockerCmd() {
