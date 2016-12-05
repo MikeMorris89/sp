@@ -7,6 +7,7 @@
   <string id="last_local_directory">None</string>
   <string id="last_remote_directory">None</string>
   <string id="lessDefaultInterpreter">None</string>
+  <long id="prefs_version">1</long>
   <string id="sassDefaultInterpreter">None</string>
   <string id="scssDefaultInterpreter">None</string>
   <string id="tidy_errorlevel">warnings</string>
