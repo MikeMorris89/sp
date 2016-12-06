@@ -50,13 +50,16 @@
                 <a id="a3" href="#about" th:onclick="'javascript:menu-close.click();'">About</a>
             </li>
             <li>
-                <a id="a4" href="#services" th:onclick="'javascript:menu-close.click();'">Services</a>
+                <a id="a4" href="#applist" th:onclick="'javascript:menu-close.click();'">Applications</a>
             </li>
             <li>
-                <a id="a5" href="#portfolio" th:onclick="'javascript:menu-close.click();'">Portfolio</a>
+                <a id="a5" href="#references" th:onclick="'javascript:menu-close.click();'">References</a>
             </li>
             <li>
                 <a id="a6" href="#contact" th:onclick="'javascript:menu-close.click();'">Contact</a>
+            </li>
+            <li>
+                <a id="a7" href="/admin" th:onclick="'javascript:menu-close.click();'">View running apps</a>
             </li>
         </ul>
     </nav>
@@ -176,9 +179,9 @@
     
     <!-- Service List -->
         <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <div class="row">
+        <div id="" class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Project Forks and Code References.</h2>
+                <h2 class="page-header">Project Forks and Code References</h2>
             </div>
             <div class="col-md-4">
                 <div class="media">
@@ -299,7 +302,7 @@
         
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div id="contact" class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Mike Morris</strong>
