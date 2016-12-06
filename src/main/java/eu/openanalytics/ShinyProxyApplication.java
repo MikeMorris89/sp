@@ -75,7 +75,7 @@ public class ShinyProxyApplication {
 				deploymentInfo.addInitialHandlerChainWrapper(new RootHandlerWrapper());
 			}
 		});
-		factory.setPort(Integer.parseInt(environment.getProperty("shiny.proxy.port", "80")));
+		factory.setPort(Integer.parseInt(environment.getProperty("shiny.proxy.port", "8080")));
 		return factory;	
 	}
 
